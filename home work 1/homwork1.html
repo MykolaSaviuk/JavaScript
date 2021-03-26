@@ -1,0 +1,283 @@
+// Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.
+let hello = 'hello';
+let owu = 'owu';
+let com = 'com';
+let ua= 'ua';
+let one = 1;
+let ten = 10;
+let numNegatine = -999;
+let numPozetive = 123;
+let PI = 3.14;
+let NumO = 2.16;
+let sixteen = 16;
+let aTrue = 'True';
+let aFalse = 'False';
+
+// Вивести кожну змінну за допомогою: console.log , alert, document.write
+console.log(hello);
+console.log(owu);
+console.log(com);
+console.log(ua);
+console.log(one);
+console.log(ten);
+console.log(numNegatine);
+console.log(numPozetive);
+console.log(PI);
+console.log(NumO);
+console.log(sixteen);
+console.log(aTrue);
+console.log(aFalse);
+
+//Переприсвоїти кожну змінну з завдання вище на будь які довільні значення.
+hello = 'hellO';
+owu = 'owU';
+com = 'coM';
+ua= 'UA';
+one = 1-1;
+ten = 5+6;
+numNegatine = -998;
+numPozetive = 122;
+PI = 3.14+3.14*3.14;
+NumO = 2;
+sixteen = 18;
+aTrue = 'False';
+aFalse = 'True';
+//Вивести кожну змінну за допомогою: console.log , alert, document.write
+
+console.log(hello);
+console.log(owu);
+console.log(com);
+console.log(ua);
+console.log(one);
+console.log(ten);
+console.log(numNegatine);
+console.log(numPozetive);
+console.log(PI);
+console.log(NumO);
+console.log(sixteen);
+console.log(aTrue);
+console.log(aFalse);
+
+За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками. Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
+
+const name = prompt('Вітаю *Імя*');
+const surname = prompt( 'По-батькові');
+const age = prompt( 'Скільки  тобі років');
+Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
+console.log(`Вітаю *Імя*${name}  ${surname}. Тобі ${age} років.`);
+
+Взяти змінні з завдання вище та зєднати їх в одну змінну (конкатинація).
+let name = 'Mykola';
+let surname = 'Saviuk';
+let age = 25;
+let cot = 'Mykola'+' '+'Saviuk'+' '+25;
+console.log(cot);
+
+За допомогою prompt() отримати 3 числа. Привести їх до числа (Google "String to number JS"). Вивести їх в консоль.
+let number1 = prompt('namber 8')
+let number2 = prompt('namber 10')
+let number3 = prompt('namber 11')
+console.log(number1,number2,number3);
+
+За допомогою prompt() отримати 4 числа. Привести їх до числа за допомогою paeseInt. Додати їх всі мож собою і результат вивести в консоль.
+let number1 = parseInt(prompt('number 1'));
+console.log(number1);
+let number2 = parseInt(prompt('number2'));
+console.log(number2);
+let number3 = parseInt(prompt('number3'));
+console.log(number3);
+let number4 = parseInt(prompt('number4'));
+console.log(number4);
+console.log(number1+'\n'+number2+'\n'+number3+'\n'+number4);
+
+За допомогою prompt() отримати 3 числа з плаваючою точкою за допомогою parseFloat.
+console.log(Math.round(parseFloat(prompt('enter float'))));
+
+За допомогою prompt() отримати 2 цілих числа.Перше число - це число яке будуть підносити до степеня. Друге число - це число яке являється степенню.
+За допомогою Math.pow (Google) піднести перше число в степінь другого числа.
+let number = prompt('100');
+let pow = prompt( '200');
+let result = Math.pow(10,6);
+console.log(result);
+
+За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
+let a = 100; let b = '100'; let c = true;
+console.log(typeof a,b,c);
+В однакових виразаї не використовувати однакові оператори!!!
+5 < 6 -> true
+5 > 6 -> false
+5 == 6 -> false
+5 !==== 6 -> false
+10 = 10 -> true
+10 === 10 -> true
+10 != 10 -> false
+10 !== 10 -> false
+10 !=== 10 -> false
+123 !='123' -> false
+123 == '123' -> true
+
+Додатково:
+- Подивіться на наступні вирази і спробуйте вгадати яким буде вивід в консоль. Перевірте себе.
+
+console.log(132 > 100+ && -45 < 12 );-
+console.log(34 > 33+ && +23 < 90 );+
+console.log(99 > 100- &&+ 45 > 12 );-
+console.log(132 > 100+ ||- 45 < 12 ); +
+console.log(111 > 11 || 45 < 111 ); +
+console.log((111 > 11 || 45 < 111)+ && +(132 > 100 || 45 < 12) );+
+console.log((111 > 11 || 45 < 56)+ || +(132 > 100 || 45 < 12) );+
+console.log((132 > 100 && 45 < 12 )- && +(132 > 100 || 45 < 12 ) );-
+console.log((111 > 11 || 45 < 111)+ || -(99 > 100 && 45 > 12 ));+
+console.log(!!'-1');+
+console.log(!!-1);+
+console.log(!!'0');+
+console.log(!!'null');-
+console.log(!!'undefined');-
+console.log(!!(3/'owu'));+
+console.log((111 > 11 || 45 < 111) ||  !!'0');+
+console.log((!!111 == !!11 || 45 < 111)+ && -(99 > 100 && 45 > 12 ));-
+
+                                             РОБОТА В АУДИТОРІЇ
+______________________________________________________________________________________________________________________________________________________
+
+1. Оголосіть змінні str, num, flag и txt зі значеннями «Привіт», 123, true, «true».
+За допомогою typeof переконайтесь, що значення змінних належать типам: string, number и  boolean.
+let str = "Привіт";
+let num = 123;
+let flag  = true;
+let txt = "true";
+console.log(typeof str,num,flag,txt);
+
+
+
+2. Оголосіть змінні a1, a2, a3, a4, a5. За домогою 3х математичних оператцій отримайте числа:
+let a1 = (16 / 2)+ 26;
+let a2 = 14 - 2;
+let a3 = 99 - 33;
+let a4 = 30 * 3;
+let a5 = 100 - 13;
+console.log(typeof a1,a2,a3,a4,a5,);
+
+3.  Створіть змінні a6, a7, a8, a9, a10. Запишіть в них результати виразів:
+let a6 = 5 % 3;
+let a7 = 3 % 5;
+let a8 = 5 + '3';
+let a9 = '5' - 3;
+let a10 = 75 + 'кг';
+console.log(typeof a6,a7,a8,a9,a10,);
+4. Напищіть код, який вираховує площу прямокутника висотою 23см. (змінна height) та шириною 10см (змінна width).
+Значееня площі зберігати в змінній s.
+let width = +prompt('10');
+let height = +prompt('23');
+let p = width+height;
+console.log(p);
+
+5.  Напиши код, который находит объем цилиндра высотой 10м (переменная heightC) и диаметром основания 4м (dC),
+результат поместите в переменную v.
+let dC = +prompt('2');
+let heightC = +prompt('10');
+let v = dC*heightC;
+console.log(v);
+
+6. У прямоугольного треугольника две стороны n (со значением 3) и m (со значением 4).
+Найдите гипотенузу k по теореме Пифагора (нужно использовать функцию Math.pow(число, степень) или оператор возведения в степень ** ).
+let n = +prompt('3');
+let m = +prompt('4');
+let r = n*m;
+console.log(r);
+
+7. Напишите скрипт, который выводит "Hello world", создавши переменную str и выводить спомощью document.write, alert и console.log
+let str = "Hello world";
+console.log(str);
+
+8. Вывести в окно браузера при помощи метода alert() следующие данные: Ваше ФИО, возраст, хобби (каждой на новой строки спомощью \n).
+let name = 'Ваше ФИО';
+let age = 'возраст';
+let hobby = 'хобби';
+alert('name'+`\n`+'age'+`\n`+'hobby');
+9. Создать 4 переменные с использованием ключевого слова let с именами str1, str2, str3, concatenation.
+Переменной str1 присвоить фразу ‘Кто ‘, str2 – ‘ты ‘, str3 – ‘такой?’
+Локальной переменной concatenation присвоить результат конкатенации 3-х строк: str1, str2, str3.
+Вывести в документ содержимое переменной concatenation спомощью document.write
+let str1 = 'Кто';
+let str2 =  'ты';
+let str3 = 'такой?';
+let con = 'Кто'+` `+'ты'+ ` `+'такой?';
+document.write(con);
+10. Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
+let str = "20";
+let a = 5;
+document.write(str + a + "<br/>"); 205
+document.write(str - a + "<br/>"); 15
+document.write(str * "2" + "<br/>"); 40
+document.write(str / 2 + "<br/>"); 20
+11. Какие значения выведет в окно консоли следующий фрагмент кода если его поместить в console.log?
+parseInt("3.14") 3  - округляэ до  цылого цисла
+parseInt("-7.875") - -7 округляэ до  цылого цисла
+parseInt("435") 435
+parseInt("Вася") Nan
+
+12.  С помощью окна ввода, вызываемого методом prompt, пользователь может ввести данные, которые будут использоваться далее, повторите код ниже
+let str = prompt("Enter something", "ho-ho")
+console.log(str);
+
+13. С помощью окна ввода, вызываемого методом prompt, сделать сложение двух чисел, а вывод результата при помощи метода alert
+let number1 = +prompt('1');
+let parseInt1 = parseInt1(number1);
+let number2 = +prompt('2');
+let parseInt2 = parseInt2(number2);
+let result =  'number1+number2';
+console.log(result);
+
+
+14. С помощью окна ввода, вызываемого методом prompt, пользователь последовательно выводит имя, фамилию и возраст, а вам не обходимо вывести строку такого вида
+Доброго вечера Иван Иванов, мои поздравления что вам 32 , а вывод результата при помощи метода alert
+let name = "Доброго вечера Иван Иванов";
+let age = "мои поздравления что вам 32";
+
+
+
+=====================
+======ДОП============
+=====================
+
+
+
+
+1. Три різних числа вводяться через prompt().
+За допомоги if else вивести іх в порядку зростання. (відсортувати по зростанню)
+let a = 20;
+let b = 18;
+let c = 15;
+if (a>b && a>c){
+if (b>c) {
+console.log(c,b,a);
+}else{
+console.log(b,c,a);
+} if (c > b && c > a ) {
+console.log(a,b,c);
+}else{
+console.log(c,b,a)
+}
+
+}
+
+2.
+Все параматры получаем с клавиатуры!!!!
+Имитируем поведение пешехода на перекстке.
+Если светофор зеленый - вывести "иди".
+Если светофор желтый - вывести "подожди".
+Если светофор красный - вывести "стой".
+Если светофор в аварийном режиме вывести "делай что хочешь"!
+
+3
+Все параметры получаем с клавиатуры!!!!(prompt , confirm)
+Создать переменную isRoadClear которая характеризирует наличие на дороге машин.
+Улучшаем предыдущее задание.
+Если светофор зеленый и машин нет - вывести "иди".
+Если светофор зеленый и машины есть  - вывести подожди пока нарушители проедут".
+Если светофор желтый и машины есть - вывести "жди".
+Если светофор желтый и машин нет - вывести "все рано жди".
+Если светофор красный и машин нет- вывести "стой все рано".
+Если светофор красный - и машины есть вывести "стой и жди".
+Если светофор в аварийном режиме вывести "делай что хочешь"!
